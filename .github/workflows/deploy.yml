@@ -18,4 +18,6 @@ jobs:
       # Deploy
       - run: rsync -e "ssh -p 20022 -i $HOME/.ssh/REGRU_KEY -o StrictHostKeyChecking=no" --archive --compress --delete . u0684904@server106.hosting.reg.ru:1500/var/www/u0684904/data/www/opttorg-spb.ru
 
+      #
+
       
