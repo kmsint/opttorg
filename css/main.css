@@ -1,0 +1,262 @@
+*,
+*:before, 
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "CenturyGothic", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #212121;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header {
+    background-color: black;
+    height: 320px;
+}
+
+.header:after {
+    position: absolute;
+    content: "";
+    top: 320px;
+	width: 0;
+	height: 0;
+	border-top: 50px solid rgb(0, 0, 0); 
+	border-right: 1409px solid transparent;	
+    z-index: -1;		
+}
+
+.container {
+    /* padding: 0px; */
+    max-width: 1200px;
+}
+
+.stroke-logo {
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 42px;
+    width: 22px;
+    height: 6px;
+    background-color: white;
+    transform: rotate(-30deg);
+    transition: all 0.3s ease;
+}
+
+.logo p {
+    padding-left: 20px;
+    color:rgb(255, 255, 255);
+    font-size: 72px;
+    transition: all 0.3s ease;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo:hover p {
+    color:rgb(220, 220, 220);
+}
+
+.logo:hover .stroke-logo {
+    background-color: rgb(220, 220, 220);
+}
+
+.menu-icon-wrapper {
+    margin-top: 35px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    position: relative;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    transition: background-color 0.2s ease-in 0.2s;
+}
+
+.menu-icon::before {
+    position: absolute;
+    left: 0;
+    top: -13px;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon::after {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: white;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+}
+
+.menu-icon.menu-icon-active {
+    background-color: transparent;
+    transition: background-color 0.1s ease-in 0.1s;
+}
+
+.menu-icon.menu-icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* .menu-icon-wrapper:hover .menu-icon {
+    background-color: rgb(220, 220, 220);
+} */
+
+.slogan {
+    text-align: center;
+}
+
+/* .stroke-slogan {
+    position: absolute;
+    margin-left: 194px;
+    width: 16px;
+    height: 5px;
+    background-color: white;
+    transform: rotate(-30deg);
+} */
+
+.slogan h1 {
+    color:rgb(255, 255, 255);
+}
+
+.cards {
+    margin-top: -90px;
+}
+
+.cards__card {
+    display: flex;
+    background-color: #FEF3CC;
+    height: 190px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    transition: all .3s;
+    
+}
+
+.cards__card:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.4);
+    color:rgba(0, 0, 0, 1)
+}
+
+.cards a {
+    color:black;
+    text-decoration: none;
+    margin-top: 5;
+}
+
+.cards__card h2 {
+    font-weight: 100;
+    font-size: xx-large;
+    color:rgba(0, 0, 0, 1)
+}
+
+.product-left {
+    margin-top: 30px;
+}
+
+.item {
+    text-align: center;
+}
+
+.photo {
+    max-height: 360px;
+}
+
+.footer {
+    margin-top: 100px;
+    background-color: black;
+    height: 300px;
+    color:rgb(255, 255, 255);
+}
+
+.footer:before {
+    position: relative;
+    content: "";
+    top: -71px;
+	width: 0;
+	height: 0;
+	border-bottom: 50px solid rgb(0, 0, 0); 
+	border-left: 1409px solid transparent;	
+    /* z-index: -1;		 */
+}
+
+.to-up {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15%;
+    justify-content: center;
+    position: fixed;
+    color:rgb(179, 179, 179);
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 22;
+    cursor: pointer;
+    box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.4);
+    transition: all .3s;
+}
+
+@font-face {
+    font-family: "CenturyGothic";  
+    src: url("../fonts/CenturyGothic.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "CenturyGothic";  
+    src: url("../fonts/CenturyGothic-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "CenturyGothicBoldItalic";  
+    src: url("../fonts/CenturyGothic-BoldItalic.ttf") format("truetype"); 
+    font-style: italic; 
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "CenturyGothicItalic";  
+    src: url("../fonts/CenturyGothic-Italic.ttf") format("truetype"); 
+    font-style: italic; 
+    font-weight: normal;
+}
