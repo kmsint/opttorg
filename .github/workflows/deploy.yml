@@ -16,7 +16,7 @@ jobs:
       - run: echo "${{ secrets.REGRU_KEY }}" > "$HOME/.ssh/REGRU_KEY"
       - run: chmod 600 "$HOME/.ssh/REGRU_KEY"
       # Deploy
-      - run: rsync -e "ssh -p 20022 -i $HOME/.ssh/REGRU_KEY -o StrictHostKeyChecking=no" --archive --compress --delete . u0684904@server106.hosting.reg.ru:1500/var/www/u0684904/data/www/opttorg-spb.ru
+      - run: rsync -e "ssh -p 20022 -i $HOME/.ssh/REGRU_KEY -o StrictHostKeyChecking=no" --archive --compress --delete . u0684904@server106.hosting.reg.ru:/var/www/u0684904/data/www/opttorg-spb.ru
 
       #
 

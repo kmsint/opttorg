@@ -4,7 +4,7 @@ document.querySelector('.menu-icon-wrapper').onclick = function(){
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    let toTopBtn = document.querySelector('.to-up');
+    let toTopBtn = document.querySelector('.to-up-wrapper');
 
     window.onscroll = function () {
         if (window.pageYOffset > 580) {
