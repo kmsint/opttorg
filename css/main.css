@@ -200,7 +200,7 @@ img {
 .footer {
     margin-top: 100px;
     background-color: black;
-    height: 300px;
+    height: 260px;
     color:rgb(255, 255, 255);
 }
 
@@ -213,6 +213,15 @@ img {
 	border-bottom: 50px solid rgb(0, 0, 0); 
 	border-left: 1409px solid transparent;	
     /* z-index: -1;		 */
+}
+
+.made-in-russia-sign {
+    margin-bottom: 5%;
+    
+}
+
+.made-in-russia-sign img {
+    height: 35px;
 }
 
 .to-up-wrapper {
@@ -236,7 +245,7 @@ img {
 }
 
 .to-up {
-    top: 19px;
+    top: 20px;
     left: 5px;
     position: relative;
     width: 14px;
@@ -255,12 +264,12 @@ img {
     width: 16px;
     height: 2px;
     background-color: rgb(150, 150, 150);
-    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    transition: transform 0.1s ease-in, top 0.1s linear 0.1s;
     transform: rotate(-92deg);
 }
 
 .to-up-wrapper:hover {
-    background-color: #f0f0f0;
+    background-color: #dddddd;
 }
 
 @font-face {

@@ -1,7 +1,7 @@
 // hamburger button click processing
 document.querySelector('.menu-icon-wrapper').onclick = function(){
     document.querySelector('.menu-icon').classList.toggle('menu-icon-active');
-}
+};
 
 document.addEventListener('DOMContentLoaded', () => {
     let toTopBtn = document.querySelector('.to-up-wrapper');
