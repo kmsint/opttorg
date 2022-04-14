@@ -123,18 +123,18 @@ img {
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
-.menu-icon.menu-icon-active {
+.menu-icon.menu-icon--active {
     background-color: transparent;
     transition: background-color 0.1s ease-in 0.1s;
 }
 
-.menu-icon.menu-icon-active::before {
+.menu-icon.menu-icon--active::before {
     transform: rotate(45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-.menu-icon.menu-icon-active::after {
+.menu-icon.menu-icon--active::after {
     transform: rotate(-45deg);
     top: 0;
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
@@ -142,6 +142,14 @@ img {
 
 .menu-icon-wrapper:hover {
     cursor: pointer;
+}
+
+.aside__nav {
+    display: none;
+}
+
+.aside__nav--active {
+    display: block;
 }
 
 /* .menu-icon-wrapper:hover .menu-icon  {
