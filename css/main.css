@@ -33,18 +33,16 @@ img {
     height: 320px;
 }
 
-/* .header:after {
+.header:after {
     position: absolute;
     content: "";
-    top: 500px;
+    top: 205px;
 	width: 100%;
-	height: 40px;
-    background-color: red;
-	border-top: 50px solid rgb(0, 0, 0); 
-	border-right: 1440px solid transparent;
-    transform:skewX(30deg);
+	height: 150px;
+    background-color: rgb(0, 0, 0);
+    transform: skewy(-2deg);
     z-index: -1;		
-} */
+}
 
 .logo {
     margin-top: 15px;
@@ -219,7 +217,7 @@ img {
 
 /* Cards */
 .cards {
-    margin-top: -90px;
+    margin-top: -70px;
 }
 
 .cards__card {
@@ -283,15 +281,16 @@ img {
     color:rgb(255, 255, 255);
 }
 
-/* .footer:before {
-    position: relative;
+.footer:after {
+    position: absolute;
     content: "";
-    top: -71px;
-	width: 0;
-	height: 0;
-	border-bottom: 50px solid rgb(0, 0, 0); 
-	border-left: 1409px solid transparent;	
-} */
+    margin-top: -220px;
+	width: 100%;
+	height: 150px;
+    background-color: rgb(0, 0, 0);
+    transform: skewy(-2deg);
+    z-index: -1;		
+}
 
 .made-in-russia-sign {
     margin-bottom: 5%;
@@ -411,8 +410,6 @@ img {
 
     .nav__menu__li-aside a {
         font-size: 40px;
-        align-items: center;
-        justify-content: center;
     }
 
 }
