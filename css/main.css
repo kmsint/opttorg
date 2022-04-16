@@ -87,7 +87,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .menu-icon {
@@ -178,6 +178,7 @@ img {
     visibility: visible;
     right: 0;
     transition: right .5s;
+    z-index: 1;
 }
 
 .nav__menu__li-aside a:hover {
